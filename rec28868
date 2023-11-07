@@ -1,0 +1,40 @@
+Patino_assignment3:
+total 20
+drwxr-xr-x. 3 myid   54 Oct 24 10:42 bin
+-rwxr-xr-x. 1 myid  256 Oct 25 13:05 compile.sh
+-rw-r--r--. 1 myid   37 Oct 25 13:09 double-input.txt
+-rw-r--r--. 1 myid   29 Oct 25 13:09 int-input.txt
+-rw-r--r--. 1 myid 2309 Oct 30 23:22 README.txt
+-rw-r--r--. 1 myid    0 Oct 31 00:00 rec28868
+drwxr-xr-x. 3 myid   28 Oct 24 10:39 src
+-rw-r--r--. 1 myid   31 Oct 25 13:09 string-input.txt
+
+Patino_assignment3/bin:
+total 4
+drwxr-xr-x. 3 myid  25 Oct 24 10:42 cs2720
+-rw-r--r--. 1 myid 395 Oct 24 10:41 NodeType.class
+
+Patino_assignment3/bin/cs2720:
+total 0
+drwxr-xr-x. 2 myid 110 Oct 25 13:01 bst
+
+Patino_assignment3/bin/cs2720/bst:
+total 20
+-rw-r--r--. 1 myid 4684 Oct 30 23:57 BinarySearchTree.class
+-rw-r--r--. 1 myid 7289 Oct 30 23:57 BinarySearchTreeDriver.class
+-rw-r--r--. 1 myid  428 Oct 30 23:57 NodeType.class
+
+Patino_assignment3/src:
+total 0
+drwxr-xr-x. 3 myid 25 Oct 24 10:39 cs2720
+
+Patino_assignment3/src/cs2720:
+total 0
+drwxr-xr-x. 2 myid 107 Oct 30 23:57 bst
+
+Patino_assignment3/src/cs2720/bst:
+total 28
+-rw-r--r--. 1 myid 13984 Oct 30 23:57 BinarySearchTreeDriver.java
+-rw-r--r--. 1 myid  7038 Oct 30 23:54 BinarySearchTree.java
+-rw-r--r--. 1 myid   150 Oct 24 10:42 NodeType.java
+/home/myid/jmp17450/Patino_assignment3:/home/myid/csci-2720b
