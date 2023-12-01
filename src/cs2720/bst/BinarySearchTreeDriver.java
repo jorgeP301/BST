@@ -239,7 +239,7 @@ public class BinarySearchTreeDriver {
             try {
                 sc = new Scanner(new File(args[0]));
                 while (sc.hasNext()) {
-                    String s = sc.nextLine();
+                    String s = sc.next();
                     original.insert(s);
                 }
             }
@@ -333,6 +333,9 @@ public class BinarySearchTreeDriver {
                 case "q":
                     System.out.print("Exiting the program...");
                     System.exit(0);
+                    break;
+                case "com":
+                    original.compTest("Igloo", "Movie");
                     break;
                 default :
                     System.out.print("invalid command");

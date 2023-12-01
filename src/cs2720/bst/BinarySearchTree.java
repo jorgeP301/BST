@@ -21,7 +21,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
         else if (key.compareTo(n.info) == 0) {
             return n;
         }
-        else if (key.compareTo(n.info) == -1) {
+        else if (key.compareTo(n.info) < 0) {
            n.left = insertHelper(n.left, key);
         }//if key is less, go left
         else {// go right otherwise
@@ -42,10 +42,10 @@ public class BinarySearchTree <T extends Comparable <T>> {
         if (isEmpty()) {
             return n;
         }
-        if(key.compareTo(n.info) == -1) {
+        if(key.compareTo(n.info) < 0) {
              n.left = deleteHelper(n.left, key);
         }//if less than parent go left
-        else if (key.compareTo(n.info) == 1) {
+        else if (key.compareTo(n.info) > 0) {
             n.right = deleteHelper(n.right, key);
         } // if greater than parent go right
         else {
@@ -89,10 +89,10 @@ public class BinarySearchTree <T extends Comparable <T>> {
         else if(item.compareTo(n.info) == 0) {
             return true;
         }
-        else if(item.compareTo(n.info) == -1) {
+        else if(item.compareTo(n.info) < 0) {
             return retrieveHelper(n.left, item);
         }
-        else if( item.compareTo(n.info) == 1) {
+        else if( item.compareTo(n.info) > 0) {
             return retrieveHelper(n.right, item);
         }
         else return false;
@@ -153,7 +153,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
             return;
         }
         if(n != null) {
-            if(key.compareTo(n.info) == -1) {
+            if(key.compareTo(n.info) < 0) {
                 if(n.left != null && n.left.info.compareTo(getParent(root, key).info) == 0) {
                     getChildren(n.right);
                 }
@@ -167,7 +167,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
                     getCousins(n.right, key);
                 }
             }
-            else if(key.compareTo(n.info) == 1) {
+            else if(key.compareTo(n.info) > 0) {
                 if(n.right != null && n.right.info.compareTo(getParent(root, key).info) == 0) {
                     getChildren(n.left);
                 }
@@ -194,7 +194,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
         }
 
         if(n.left != null || n.right != null) {
-            if(key.compareTo(n.info) == -1) {
+            if(key.compareTo(n.info) < 0) {
                 if(key.compareTo(n.left.info) == 0) {
                     return n;
                 }
@@ -202,7 +202,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
                     parent = getParent(n.left, key);
                 }
             }
-            else if(key.compareTo(n.info) == 1) {
+            else if(key.compareTo(n.info) > 0) {
                 if(key.compareTo(n.right.info) == 0) {
                     return n;
                 }
@@ -226,5 +226,7 @@ public class BinarySearchTree <T extends Comparable <T>> {
             System.out.print(n.right.info + " ");
         }
     }
-
+    public void compTest(T item, T itemm) {
+        System.out.print(item.compareTo(itemm));
+    }
 } //BinarySearchTree
